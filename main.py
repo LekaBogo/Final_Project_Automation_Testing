@@ -81,4 +81,10 @@ class TestTriangle(unittest.TestCase):
     def test_perimeter(self):
         # Test pentru metoda perimeter() a clasei Triangle
         triangle = Triangle(3, 4, 5)
-        # Verificare:
+        # Verificare: Perimetrul triunghiului cu laturile 3, 4 și 5 ar trebui să fie 12
+        self.assertEqual(triangle.perimeter(), 12)
+
+
+# Verificarea dacă scriptul este rulat ca fișier principal
+if __name__ == '__main__':
+    unittest.main()
