@@ -41,6 +41,7 @@ class TestWebsite(unittest.TestCase):
         time.sleep(3)
         self.driver.find_element(By.XPATH,'//*[@id="root"]/div/div[2]/form/div/div[3]/button/span[1]').click()
         time.sleep(3)
+        self.driver.quit()
 
     def test_sign_up(self):
 
@@ -61,7 +62,7 @@ class TestWebsite(unittest.TestCase):
         time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR,'#root > div > div.css-p0w51b > div.css-13k67qp > div > div:nth-child(4) > button > span.MuiButton-label').click()
         time.sleep(3)
-        self.driver.find_element(By.CSS_SELECTOR,'#root > div > div.css-p0w51b > div.css-13k67qp > div > div.css-wbkzs1 > div > div > input').send_keys("bogoros88@gmail.com")
+        self.driver.find_element(By.CSS_SELECTOR,'#root > div > div.css-p0w51b > div.css-13k67qp > div > div.css-wbkzs1 > div > div > input').send_keys("Manescu_Andreea@yahoo.com")
         time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR,'#root > div > div.css-p0w51b > div.css-13k67qp > div > div:nth-child(4) > button > span.MuiButton-label').click()
         time.sleep(3)
